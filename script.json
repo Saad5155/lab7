@@ -1,0 +1,21 @@
+﻿
+// Get header element
+var header = document.getElementById("header");
+
+// Get button elements
+var blueBtn = document.getElementById("blue-btn");
+var greenBtn = document.getElementById("green-btn");
+var yellowBtn = document.getElementById("yellow-btn");
+
+// Add event listeners to buttons
+blueBtn.addEventListener("click", function() {
+    header.style.backgroundColor = "blue";
+});
+
+greenBtn.addEventListener("click", function() {
+    header.style.backgroundColor = "green";
+});
+
+yellowBtn.addEventListener("click", function() {
+    header.style.backgroundColor = "yellow";
+});
