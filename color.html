@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Color Changer</title>
+  <style>
+    h1 {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+<h1>Header</h1>
+
+<form id="colorForm">
+  <label for="colorInput">Enter a color:</label>
+  <input type="text" id="colorInput" name="color">
+  <button type="submit">Change Color</button>
+</form>
+
+<script>
+  const colorForm = document.getElementById('colorForm');
+  const header = document.querySelector('h1');
+
+  colorForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const colorInput = document.getElementById('colorInput').value;
+    header.style.color = colorInput;
+  });
+</script>
+</body>
+</html>
